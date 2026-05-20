@@ -1,68 +1,109 @@
 # PopX React App
 
-A React-based implementation of the PopX mobile UI design, built as an interview assignment. The application includes user registration, login, session handling, and protected account settings pages.
+A modern React-based web application that replicates a mobile-first PopX user experience with seamless authentication, protected routing, and responsive UI design. The project focuses on clean frontend architecture, intuitive user interactions, and pixel-perfect implementation.
 
-## Features
+## Key Features
 
-- User Registration
-- User Login
-- Searchable country code selector
-- Session persistence
-- Protected routes
+- Secure user registration flow
+- Login with credential validation
+- Searchable country code selector for phone input
 - Password visibility toggle
-- Form validation
-- Responsive mobile-centered UI
+- Real-time form validation with inline feedback
+- Session persistence using local storage
+- Protected account settings route
+- Logout functionality
+- Responsive mobile-centered interface
+- Smooth routing and user navigation
 
 ## Tech Stack
 
 - React
 - Vite
-- React Router (TanStack Router)
+- React Router
 - CSS Modules
 - localStorage
 
-## Installation
+## Getting Started
+
+### Install dependencies
 
 ```bash
 npm install
+```
+
+### Start development server
+
+```bash
 npm run dev
 ```
 
-## Build
+### Build for production
 
 ```bash
 npm run build
 ```
 
-## Run Preview
+### Preview production build
 
 ```bash
 npm run preview
 ```
 
-## Environment Variables
+## Deployment
 
-No environment variables required.
+This project is deployment-ready and works seamlessly on platforms like **Vercel**.
 
-## Deployment (Vercel)
+Live URL:
 
-1. Push the code to GitHub
-2. Go to [Vercel](https://vercel.com)
+```text
+https://popx-react-app-six.vercel.app/
+```
+
+### Vercel Deployment Steps
+
+1. Push the project to GitHub
+2. Login to Vercel
 3. Click **New Project**
 4. Import the GitHub repository
-5. Framework preset: **Vite**
-6. Build command: `npm run build`
-7. Output directory: `dist`
+5. Select framework preset: **Vite**
+6. Build command:
+
+```bash
+npm run build
+```
+
+7. Output directory:
+
+```bash
+dist
+```
+
 8. Click **Deploy**
 
-After deployment, Vercel will generate a live link like:
+After deployment, Vercel generates a shareable live URL:
 
-```
+```text
 https://your-project-name.vercel.app
 ```
 
-You can rename the project in Vercel for a cleaner URL, e.g. `popx-react-app.vercel.app`.
+## Project Highlights
 
-## Notes
+- Clean and reusable component-based architecture
+- Authentication flow with credential matching
+- Protected route handling
+- User-friendly form validation
+- Searchable country code selection
+- Production-ready frontend structure
+- Optimized for deployment and browser refresh-safe routing
 
-A `vercel.json` is included with SPA rewrites so that direct visits and refreshes on routes like `/login`, `/register`, and `/account` work correctly.
+## Environment Variables
+
+No environment variables are required for this project.
+
+## Routing Support
+
+SPA route rewrites are configured for deployment, ensuring direct route access and browser refresh work correctly for pages like:
+
+- `/login`
+- `/register`
+- `/account-settings`
