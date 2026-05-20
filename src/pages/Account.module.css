@@ -1,0 +1,95 @@
+.header {
+  padding: 22px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #fff;
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logout {
+  background: none;
+  border: none;
+  color: var(--popx-purple);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.body {
+  flex: 1;
+  background: #F7F8FA;
+  padding: 20px 24px;
+}
+
+.profileRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatarWrap {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7B3BFF, var(--popx-purple));
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 22px;
+  height: 22px;
+  background: var(--popx-purple);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 11px;
+  border: 2px solid #F7F8FA;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--popx-text);
+}
+
+.email {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #4A4A4A;
+}
+
+.description {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #1F1F1F;
+  line-height: 1.55;
+  padding-bottom: 22px;
+  border-bottom: 1px dashed #B8B8B8;
+}
+
+.spacer {
+  height: 240px;
+  border-bottom: 1px dashed #B8B8B8;
+}

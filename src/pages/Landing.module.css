@@ -1,0 +1,29 @@
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 28px 36px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--popx-text);
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 15px;
+  color: var(--popx-muted);
+  line-height: 1.4;
+  max-width: 260px;
+}
+
+.actions {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

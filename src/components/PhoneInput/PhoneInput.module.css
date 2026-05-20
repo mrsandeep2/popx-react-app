@@ -1,0 +1,120 @@
+.wrapper {
+  position: relative;
+  margin-top: 14px;
+}
+
+.label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  padding: 0 4px;
+  background: #fff;
+  font-size: 12px;
+  color: var(--popx-purple);
+  font-weight: 400;
+  z-index: 2;
+}
+
+.required {
+  color: #FF4D4F;
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.codeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 44px;
+  padding: 0 10px;
+  background: #fff;
+  border: 1px solid var(--popx-border);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--popx-text);
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  min-width: 92px;
+}
+
+.codeBtn:focus { outline: none; border-color: var(--popx-purple); }
+.caret { font-size: 9px; color: var(--popx-muted); }
+
+.input {
+  flex: 1;
+  width: 100%;
+  height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--popx-border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  color: var(--popx-text);
+  font-family: inherit;
+  outline: none;
+  min-width: 0;
+}
+.input:focus { border-color: var(--popx-purple); }
+
+.dropdown {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  max-height: 260px;
+  background: #fff;
+  border: 1px solid var(--popx-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.search {
+  width: 100%;
+  height: 38px;
+  padding: 8px 10px;
+  border: none;
+  border-bottom: 1px solid #EEE;
+  outline: none;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 9px 12px;
+  background: #fff;
+  border: none;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--popx-text);
+}
+.item:hover { background: #F5F2FF; }
+.item.active { background: #EDE5FF; color: var(--popx-purple); }
+.itemName { flex: 1; }
+.itemCode { color: var(--popx-muted); }
+
+.empty {
+  padding: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--popx-muted);
+}
